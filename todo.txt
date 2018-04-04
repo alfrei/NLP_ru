@@ -1,0 +1,10 @@
+- social media crawler
+- preprocessor & normalizer (+)
+- feature extractors
+- sentiment classification (pos/neu/neg)
+- frequency analysis, PMI
+- topic modeling 
+- key words, concepts, ideas, persons, brands
+- NER (named-entity recognition)
+- POS-tagging (with DL)
+- text similarity & summarization
