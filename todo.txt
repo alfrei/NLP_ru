@@ -1,7 +1,7 @@
 - preprocessor & normalizer (+)
 - feature extractors (+)
 - word embedding feature extractors
-- sentiment classification (pos/neu/neg) & error analysis
+- sentiment classification & cv & error analysis
 - frequency analysis, PMI
 - topic modeling
 - text similarity & summarization
