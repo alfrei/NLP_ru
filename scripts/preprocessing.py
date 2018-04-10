@@ -73,7 +73,7 @@ def clean_corpus(raw_corpus, save_apostrof=True,
         d = re.sub(r"(\w)[_-](\s)", r"\1\2", d)
 
         # удаление хэштегов/эмодзи
-        if remove_hashtags: d = remove_word(d, "ht")
+        if remove_hashtags: d = remove_word(d, "ht_")
         if remove_emoji: d = remove_word(d, "emoji_")
         if collapse_emoji: d = remove_repeated_emojies(d)
 
