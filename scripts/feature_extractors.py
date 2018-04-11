@@ -41,4 +41,3 @@ def tfidf_extractor(corpus, **kwargs):
     return vectorizer, features
 
 
-

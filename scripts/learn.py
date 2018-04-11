@@ -1,4 +1,5 @@
 from sklearn import metrics
+import numpy as np
 
 
 def fit_model(X_train,X_test,y_train,y_test,model):
@@ -14,4 +15,9 @@ def fit_model(X_train,X_test,y_train,y_test,model):
     print(metrics.confusion_matrix(y_test, predict))
     if 'predict_proba' in dir(model): predict = model.predict_proba(X_test)
     return predict
+
+
+def max_index(arr):
+    """ return first index (or axis for 2D array) of maximum value """
+    return np.where(arr == np.max(arr))[0][0]
 

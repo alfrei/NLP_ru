@@ -2,7 +2,7 @@
 - feature extractors (+)
 - word embedding feature extractors
 - sentiment classification & cv & error analysis
-- frequency analysis, PMI
+- collocations, PMI (+)
 - topic modeling
 - text similarity & summarization
 - handy parallel multiproccessing interface

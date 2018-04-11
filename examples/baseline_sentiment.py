@@ -134,10 +134,6 @@ weights = np.array([10, 3, 0.1, 5]).reshape(1,4)
 blends = np.tensordot(weights, preds, [1,0])[0]
 
 
-def max_index(arr):
-    # TODO add docstring, move to learn
-    return np.where(arr == np.max(arr))[0][0]
-
 print("-"*60)
 print("ensemble")
 print(metrics.accuracy_score(y_test, np.apply_along_axis(arr=blends, axis=1, func1d=max_index)))
