@@ -4,9 +4,8 @@
 - sentiment classification & cv & error analysis
 - collocations, PMI (+)
 - topic modeling
-- text similarity & summarization
+- document similarity & summarization
 - handy parallel multiproccessing interface
-- key words, concepts, ideas, persons, brands
-- POS-tagging (DL?)
+- POS: POS-tagger for unknown words (open corpora vocab + rnn); key phrase chunks with pos; negative merging with pos
 - social media crawler
 - NER (named-entity recognition)
