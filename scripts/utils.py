@@ -59,3 +59,4 @@ def read_sql_dump(dump_filename, tr=1e6*5):
                         continue
             if idx_total > tr: break
     return data
+
