@@ -3,9 +3,12 @@
 - word embedding feature extractors
 - sentiment classification & cv & error analysis
 - collocations, PMI (+)
-- topic modeling
-- document similarity & summarization
+- topic modeling: standard methods (+)
+                  bigartm
+- document summarization (+)
+- document similarity
 - handy parallel multiproccessing interface
-- POS: POS-tagger for unknown words (open corpora vocab + rnn); key phrase chunks with pos; negative merging with pos
+- POS: POS-tagger for unknown words (open corpora vocab + rnn)
+       key phrase chunks with pos
+       negative merging with pos
 - social media crawler
-- NER (named-entity recognition)
