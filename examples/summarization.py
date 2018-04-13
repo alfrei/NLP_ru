@@ -1,6 +1,6 @@
 from gensim.summarization import summarize
-from scripts.feature_extractors import tfidf_extractor
-from scripts.models import lsa_summarizer
+from nlp_scripts.feature_extractors import tfidf_extractor
+from nlp_scripts.models import *
 import re
 
 text = """
@@ -24,7 +24,6 @@ documents = list(filter(None, [d.strip() for d in
                                re.sub(r"[\n,']", ' ', text).split('.')]))
 _, feature_matrix = tfidf_extractor(documents, min_df=1)
 lsa_idx = lsa_summarizer(feature_matrix, num_topics=2, num_sentences=4)
-
 for i, d in enumerate(documents):
     if i in lsa_idx: print(d)
 
@@ -32,5 +31,8 @@ for i, d in enumerate(documents):
 print('-'*60)
 [print(d) for d in summarize(re.sub(r"[\n]", ' ', text), split=True, ratio=0.5)]
 
-# TODO: add textrank summarization
+# custom textrank summarization: networkx.pagerank
 print('-'*60)
+lsa_idx = textrank_summarizer(feature_matrix, num_sentences=4)
+for i, d in enumerate(documents):
+    if i in lsa_idx: print(d)
