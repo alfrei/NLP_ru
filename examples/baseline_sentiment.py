@@ -16,11 +16,11 @@ from xgboost import XGBClassifier
 from collections import Counter
 import itertools
 
-from scripts.utils import *
-from scripts.preprocessing import *
-from scripts.feature_engineering import *
-from scripts.feature_extractors import *
-from scripts.learn import *
+from nlp_scripts.utils import *
+from nlp_scripts.preprocessing import *
+from nlp_scripts.feature_engineering import *
+from nlp_scripts.feature_extractors import *
+from nlp_scripts.learn import *
 
 # seeds
 import random
