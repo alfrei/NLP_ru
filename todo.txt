@@ -1,13 +1,13 @@
 - preprocessor & normalizer (+)
 - feature extractors (+)
 - word embedding feature extractors
-- sentiment classification & cv & error analysis
+- sentiment classification & cv & blending & error analysis
 - collocations, PMI (+)
 - topic modeling: standard methods (+)
                   bigartm (+)
 - document summarization (+)
 - document similarity
-- parallel multiproccessing interface
+- parallel multicore interface (+)
 - POS: POS-tagger for unknown words (open corpora vocab + rnn)
        key phrase chunks with pos
        negative merging with pos

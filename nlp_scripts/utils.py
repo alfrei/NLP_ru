@@ -2,7 +2,9 @@
 import re 
 import pandas as pd 
 from openpyxl import load_workbook
-
+from functools import partial
+from multiprocessing import Pool
+import numpy as np
 
 def filter_list_by_index(list, mask, inverse=False):
     ret = []
@@ -59,4 +61,21 @@ def read_sql_dump(dump_filename, tr=1e6*5):
                         continue
             if idx_total > tr: break
     return data
+
+
+# multicore parallel
+def worker(arr, func):
+    return [func(s) for s in arr]
+
+
+def parallel(data, func, n_jobs):
+    pool = Pool(n_jobs)
+    parts = np.array_split(data, n_jobs)
+    pool_worker = partial(worker, func=func)
+    result = pool.map(pool_worker, parts)
+    pool.close()
+    pool.join()
+    full = []
+    [full.extend(sub) for sub in result]
+    return full
 
