@@ -4,10 +4,10 @@
 - sentiment classification & cv & error analysis
 - collocations, PMI (+)
 - topic modeling: standard methods (+)
-                  bigartm
+                  bigartm (+)
 - document summarization (+)
 - document similarity
-- handy parallel multiproccessing interface
+- parallel multiproccessing interface
 - POS: POS-tagger for unknown words (open corpora vocab + rnn)
        key phrase chunks with pos
        negative merging with pos
