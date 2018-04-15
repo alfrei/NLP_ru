@@ -1,14 +1,13 @@
-- preprocessor & normalizer (+)
-- feature extractors (+)
+- preprocessor & normalizer
+- feature extractors
 - word embedding feature extractors
-- sentiment classification & cv & blending & error analysis
-- collocations, PMI (+)
-- topic modeling: standard methods (+)
-                  bigartm (+)
-- document summarization (+)
-- document similarity
-- parallel multicore interface (+)
-- POS: POS-tagger for unknown words (open corpora vocab + rnn)
-       key phrase chunks with pos
-       negative merging with pos
-- social media crawler
+- sentiment classification: simple train/test
+                            cv & blending (-)
+                            error analysis (-)
+- collocations, PMI
+- topic modeling: standard methods
+                  bigartm
+- document summarization
+- document similarity (-)
+- parallel multicore interface
+- social media crawler (-)
