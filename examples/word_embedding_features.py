@@ -64,7 +64,7 @@ def clear_and_tokenize(text):
     text = text.lower().strip().split('\n\n')
     tokenized = [re.sub('[^а-яё !?]', ' ', d).strip() for d in text]
     tokenized = [re.sub('[ ]{2,}', ' ', d) for d in tokenized]
-    tokenized = [re.sub(r'( не )', ' не_', d) for d in tokenized]
+    tokenized = [re.sub(r'( не )', ' не_', d) for d in tokenized]  # пока поддерживается только отрицание по одному слову не
     return tokenized
 
 brods = clear_and_tokenize(brods)
